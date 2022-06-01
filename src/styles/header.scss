@@ -1,0 +1,30 @@
+.header {
+    width: calc(100% - 60px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    color: #61dafb;
+    padding: 0px 30px;
+    .logo {
+        cursor: pointer;
+    }
+    .navigation {
+        display: flex;
+        justify-content: right;
+        align-items: center;
+        gap: 20px;
+        a.nav_link {
+            color: #61dafb;
+            text-decoration: none;
+            transition: linear .3s;
+            padding: 5px 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            &:hover {
+                background: #293244;
+            }
+        }
+    }
+}

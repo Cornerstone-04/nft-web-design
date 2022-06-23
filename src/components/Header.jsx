@@ -1,25 +1,33 @@
 import React from "react";
-import { Link, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import "../styles/header.scss";
 
 const Header = () => {
   const navigate = useNavigate();
   return (
     <div className="header">
-      <h1 className="logo" onClick={()=> navigate('/')}>Yooshiverse</h1>
+      <h1 className="logo" onClick={() => navigate("/")}>
+        The Logo
+      </h1>
       <nav className="navigation">
-        <Link className="nav_link" to="/">
-          Home
-        </Link>
-        <Link className="nav_link" to="/about">
-          About
-        </Link>
-        <Link className="nav_link" to="/tokenomics">
-          Tokenomics
-        </Link>
-        <Link className="nav_link" to="/roadmap">
-          Roadmap
-        </Link>
+        <div className="links">
+          <a className="nav_link" href="#tokenomics">
+            Tokenomics
+          </a>
+          <a className="nav_link" href="/rarity">
+            Rarity
+          </a>
+          <a className="nav_link" href="/roadmap">
+            Roadmap
+          </a>
+          <a className="nav_link" href="#faq">
+            FAQ
+          </a>
+        </div>
+
+        <a className="staking" href="/roadmap">
+          Staking
+        </a>
       </nav>
     </div>
   );

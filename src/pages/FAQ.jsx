@@ -27,18 +27,15 @@ const Faq = () => {
   ];
   return (
     <section className="faq" id="faq">
-      <di className="mobile"></di>
-      <div className="desktop">
-        {" "}
-        <h1 className="title">FAQ</h1>
-        {questions &&
-          questions.map((faq) => (
-            <div className="box">
-              <p className="question">{faq.question}</p>
-              <p className="answer">{faq.answer}</p>
-            </div>
-          ))}
-      </div>
+      {" "}
+      <h1 className="title">FAQ</h1>
+      {questions &&
+        questions.map((faq) => (
+          <div className="box" id={faq.id}>
+            <p className="question">{faq.question}</p>
+            <p className="answer">{faq.answer}</p>
+          </div>
+        ))}
     </section>
   );
 };

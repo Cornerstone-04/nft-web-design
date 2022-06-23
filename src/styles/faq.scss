@@ -2,13 +2,63 @@
     background: linear-gradient(180deg, #09244E 0%, #04142D 100%);
     padding: 50px 100px;
     width: calc(100% - 200px);
-    .mobile {
-        display: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    h1.title {
+        font: 700 60px sans-serif;
+        background: linear-gradient(106.8deg, rgba(255, 255, 255, 0.93) 24.1%, rgba(255, 255, 255, 0.34) 73.23%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        text-fill-color: transparent;
+        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 24px rgba(0, 0, 0, 0.25);
+        backdrop-filter: blur(40px);
+        margin: 0;
     }
-    .desktop {
+    div.box {
+        background: linear-gradient(180deg, rgba(255, 255, 255, 0) 9.55%, rgba(255, 255, 255, 0.09) 100%);
+        border-radius: 16.0176px;
+        width: 70%;
+        height: 120px;
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: column;
+        text-align: center;
+        p {
+            margin: 0;
+        }
+        p.question {
+            font: 900 20px 'Source sans-pro', sans-serif;
+            background: linear-gradient(90deg, #22A2FF 0%, #F72BEE 98.98%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            text-fill-color: transparent;
+            line-height: 45px;
+        }
+        p.answer {
+            color: rgba(255, 255, 255, 0.44);
+            font: 600 16px 'Source sans-pro', sans-serif;
+        }
+    }
+    @media(max-width: 800px) {
+        padding: 50px 25px;
+        width: calc(100% - 50px);
+        div.box {
+            width: 100%;
+            gap: 10px;
+            p.question {
+                font-size: 16px;
+                line-height: unset;
+            }
+            p.answer {
+                max-width: 300px;
+                font-size: 12px;
+            }
+        }
     }
 }

@@ -1,0 +1,14 @@
+.faq {
+    background: linear-gradient(180deg, #09244E 0%, #04142D 100%);
+    padding: 50px 100px;
+    width: calc(100% - 200px);
+    .mobile {
+        display: none;
+    }
+    .desktop {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+}

@@ -19,6 +19,7 @@ const Header = () => {
       </h1>
       <nav className="navigation" ref={navRef}>
         <div className="links">
+          <h1>Name</h1>
           <a className="nav_link" href="#tokenomics">
             Tokenomics
           </a>

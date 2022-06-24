@@ -16,3 +16,23 @@ html {
     scroll-behavior: smooth;
     transition: .5s linear;
 }
+
+img,
+a,
+button {
+    cursor: pointer;
+}
+
+body::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-track {
+    background: linear-gradient(to bottom, #09244E 0%, #04142D 100%);
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(to bottom, #22A2FF 13.04%, #FD00F3 87.87%);
+    width: 5px;
+    border-radius: 10px;
+}

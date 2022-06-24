@@ -29,10 +29,10 @@ const Footer = () => {
           <a className="footer_link" href="#tokenomics">
             Tokenomics
           </a>
-          <a className="footer_link" href="/rarity">
+          <a className="footer_link" href="#rarity">
             Rarity
           </a>
-          <a className="footer_link" href="/roadmap">
+          <a className="footer_link" href="#roadmap">
             Roadmap
           </a>
           <a className="footer_link" href="#faq">

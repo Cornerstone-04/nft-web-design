@@ -6,6 +6,10 @@ footer.footer {
     display: flex;
     justify-content: center;
     align-items: center;
+    @media (max-width: 800px) {
+        padding: 30px 25px;
+        width: calc(100% - 50px);
+    }
     .mobile {
         display: none;
         @media(max-width: 800px) {
@@ -23,7 +27,8 @@ footer.footer {
                 a.footer_link {
                     color: #FFFFFFB2;
                     text-decoration: none;
-                    font: 500 1.5rem monospace;
+                    font: 500 1rem monospace;
+                    transition: .3s linear;
                     &:hover {
                         color: #fff;
                     }
@@ -34,6 +39,9 @@ footer.footer {
                 justify-content: center;
                 align-items: center;
                 gap: 20px;
+                img {
+                    width: 2rem;
+                }
             }
         }
     }
@@ -51,6 +59,7 @@ footer.footer {
                 color: #FFFFFFB2;
                 text-decoration: none;
                 font: 500 1.5rem monospace;
+                transition: .3s linear;
                 &:hover {
                     color: #fff;
                 }

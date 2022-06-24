@@ -62,7 +62,8 @@ section.landing {
                 justify-content: center;
                 align-items: center;
                 gap: 30px;
-                button {
+                a {
+                    text-decoration: none;
                     width: 150px;
                     height: 50px;
                     outline: none;
@@ -72,14 +73,20 @@ section.landing {
                     justify-content: center;
                     align-items: center;
                     gap: 10px;
+                    img {
+                        width: 2rem;
+                        filter: invert(100%);
+                    }
                 }
                 .twitter {
                     background: linear-gradient(90deg, #22A2FF 6.42%, #F72BEE 92.64%);
                     border: none;
+                    padding: 5px;
                 }
                 .discord {
                     background: transparent;
                     border: 5px solid #f0f0f0;
+                    height: 50px;
                 }
             }
         }
@@ -138,9 +145,9 @@ section.landing {
                 justify-content: flex-start;
                 align-items: center;
                 gap: 30px;
-                button {
+                a {
+                    text-decoration: none;
                     width: 150px;
-                    // padding: 0 13px;
                     height: 50px;
                     outline: none;
                     color: #f0f0f0;
@@ -149,14 +156,20 @@ section.landing {
                     justify-content: center;
                     align-items: center;
                     gap: 10px;
+                    img {
+                        width: 2rem;
+                        filter: invert(100%);
+                    }
                 }
                 .twitter {
                     background: linear-gradient(90deg, #22A2FF 6.42%, #F72BEE 92.64%);
                     border: none;
+                    padding: 5px;
                 }
                 .discord {
                     background: transparent;
                     border: 5px solid #f0f0f0;
+                    height: 50px;
                 }
             }
         }

@@ -31,7 +31,7 @@ const Home = () => {
                 />
                 <span>Twitter</span>
               </a>
-              <a className="discord" href="https://www.discord.com" target="_blank" rel="noreferrer">
+              <a className="discord" href="https://discord.com/channels/@Cornerstone9139" target="_blank" rel="noreferrer">
                 <img
                   src={require("../assets/icons/discord-plain.svg").default}
                   alt=""
@@ -62,7 +62,7 @@ const Home = () => {
                 />
                 <span>Twitter</span>
               </a>
-              <a className="discord" href="https://www.discord.com" target="_blank" rel="noreferrer">
+              <a className="discord" href="https://discord.com/channels/@Cornerstone9139" target="_blank" rel="noreferrer">
                 <img
                   src={require("../assets/icons/discord-plain.svg").default}
                   alt=""

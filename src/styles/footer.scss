@@ -28,6 +28,7 @@ footer.footer {
                     color: #FFFFFFB2;
                     text-decoration: none;
                     font: 500 1rem monospace;
+                    transition: .3s linear;
                     &:hover {
                         color: #fff;
                     }
@@ -58,6 +59,7 @@ footer.footer {
                 color: #FFFFFFB2;
                 text-decoration: none;
                 font: 500 1.5rem monospace;
+                transition: .3s linear;
                 &:hover {
                     color: #fff;
                 }

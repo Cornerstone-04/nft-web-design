@@ -23,10 +23,10 @@ const Header = () => {
             <a className="nav_link" href="#tokenomics">
               Tokenomics
             </a>
-            <a className="nav_link" href="/rarity">
+            <a className="nav_link" href="#rarity">
               Rarity
             </a>
-            <a className="nav_link" href="/roadmap">
+            <a className="nav_link" href="#roadmap">
               Roadmap
             </a>
             <a className="nav_link" href="#faq">

@@ -1,0 +1,70 @@
+.faq {
+    background: linear-gradient(180deg, #09244e 0%, #04142d 100%);
+    padding: 50px 100px;
+    width: calc(100% - 200px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.faq h1.title {
+    font: 700 60px sans-serif;
+    background: linear-gradient(106.8deg, rgba(255, 255, 255, 0.93) 24.1%, rgba(255, 255, 255, 0.34) 73.23%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 24px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(40px);
+    margin: 0;
+}
+
+.faq div.box {
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 9.55%, rgba(255, 255, 255, 0.09) 100%);
+    border-radius: 16.0176px;
+    width: 70%;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.faq div.box p {
+    margin: 0;
+}
+
+.faq div.box p.question {
+    font: 900 20px 'Source sans-pro', sans-serif;
+    background: linear-gradient(90deg, #22a2ff 0%, #f72bee 98.98%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    line-height: 45px;
+}
+
+.faq div.box p.answer {
+    color: rgba(255, 255, 255, 0.44);
+    font: 600 16px 'Source sans-pro', sans-serif;
+}
+
+@media (max-width: 800px) {
+    .faq {
+        padding: 50px 25px;
+        width: calc(100% - 50px);
+    }
+    .faq div.box {
+        width: 100%;
+        gap: 10px;
+    }
+    .faq div.box p.question {
+        font-size: 16px;
+        line-height: unset;
+    }
+    .faq div.box p.answer {
+        max-width: 300px;
+        font-size: 12px;
+    }
+}

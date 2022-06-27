@@ -1,13 +1,14 @@
 import React from "react";
-import "../styles/tokenomics.scss";
+import "../styles/tokenomics.css";
 
-import Tokens from "../_mock/Tokens.jsx"
-import Market from "../_mock/Market"
+import Tokens from "../_mock/Tokens.jsx";
+import Market from "../_mock/Market";
 
 const Tokenomics = () => {
   return (
     <div className="tokenomics" id="tokenomics">
       {/* mobile & tablet view */}
+
       <div className="mobile">
         <h1 className="title">Tokenomics</h1>
         <div className="table">
@@ -43,6 +44,7 @@ const Tokenomics = () => {
         </div>
       </div>
       {/* desktop view */}
+
       <div className="desktop">
         <h1 className="title">Tokenomics</h1>
         <div className="table">

@@ -1,7 +1,8 @@
 import React, { useRef } from "react";
 import { useNavigate } from "react-router-dom";
 import {FaBars, FaTimes} from 'react-icons/fa'
-import "../styles/header.scss";
+// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import "../styles/header.css";
 
 const Header = () => {
   const navigate = useNavigate();
@@ -37,11 +38,13 @@ const Header = () => {
           Staking
         </a>
         <button className="menu close" onClick={showNavbar}>
+        {/* <FontAwesomeIcon icon="fa-solid fa-xmark"/> */}
         <FaTimes/>
       </button>
       </nav>
       <button className="menu" onClick={showNavbar}>
-        <FaBars/>
+      {/* <FontAwesomeIcon icon="fa-solid fa-bars" /> */}
+      <FaBars/>
       </button>
     </header>
   );

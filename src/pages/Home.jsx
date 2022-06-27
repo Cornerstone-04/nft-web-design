@@ -1,9 +1,9 @@
 import React from "react";
 import Header from "../components/Header";
-import "../styles/home.scss";
 import Tokenomics from "./Tokenomics";
 import Faq from "./FAQ";
 import Footer from "../components/Footer";
+import "../styles/home.css";
 
 const Home = () => {
   return (
@@ -24,16 +24,16 @@ const Home = () => {
               </p>
             </div>
             <div className="social_buttons">
-              <a className="twitter" href="https://twitter.com/cornerstone_jsx" target="_blank" rel="noreferrer">
+              <a className="twitter" href="https://twitter.com/cornerstone_jsx" target="_blank" rel="noopener noreferrer">
                 <img
-                  src={require("../assets/icons/twitter-plain.svg").default}
+                  src={require("../assets/icons/twitter-plain.svg")}
                   alt=""
                 />
                 <span>Twitter</span>
               </a>
-              <a className="discord" href="https://discord.com/channels/@Cornerstone9139" target="_blank" rel="noreferrer">
+              <a className="discord" href="https://discord.com/channels/@Cornerstone9139" target="_blank" rel="noopener noreferrer">
                 <img
-                  src={require("../assets/icons/discord-plain.svg").default}
+                  src={require("../assets/icons/discord-plain.svg")}
                   alt=""
                 />
                 <span>Discord</span>
@@ -55,16 +55,16 @@ const Home = () => {
               </p>
             </div>
             <div className="social_buttons">
-              <a className="twitter" href="https://twitter.com/cornerstone_jsx" target="_blank" rel="noreferrer">
+              <a className="twitter" href="https://twitter.com/cornerstone_jsx" target="_blank" rel="noopener noreferrer">
                 <img
-                  src={require("../assets/icons/twitter-plain.svg").default}
+                  src={require("../assets/icons/twitter-plain.svg")}
                   alt=""
                 />
                 <span>Twitter</span>
               </a>
-              <a className="discord" href="https://discord.com/channels/@Cornerstone9139" target="_blank" rel="noreferrer">
+              <a className="discord" href="https://discord.com/channels/@Cornerstone9139" target="_blank" rel="noopener noreferrer">
                 <img
-                  src={require("../assets/icons/discord-plain.svg").default}
+                  src={require("../assets/icons/discord-plain.svg")}
                   alt=""
                 />
                 <span>Discord</span>

@@ -1,5 +1,5 @@
 import React from "react";
-import "../styles/footer.scss";
+import "../styles/footer.css";
 
 const Footer = () => {
   return (
@@ -23,12 +23,16 @@ const Footer = () => {
           <a
             href="https://twitter.com/cornerstone_jsx"
             target="_blank"
-            rel="noreferrer"
+            rel="noopener noreferrer"
           >
-            <img src={require("../assets/icons/twitter.svg").default} alt="" />
+            <img src={require("../assets/icons/twitter.svg")} alt="" />
           </a>
-          <a href="https://www.discord.com" target="_blank" rel="noreferrer">
-            <img src={require("../assets/icons/discord.svg").default} alt="" />
+          <a
+            href="https://www.discord.com"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img src={require("../assets/icons/discord.svg")} alt="" />
           </a>
         </div>
       </div>
@@ -51,12 +55,16 @@ const Footer = () => {
           <a
             href="https://twitter.com/cornerstone_jsx"
             target="_blank"
-            rel="noreferrer"
+            rel="noopener noreferrer"
           >
-            <img src={require("../assets/icons/twitter.svg").default} alt="" />
+            <img src={require("../assets/icons/twitter.svg")} alt="" />
           </a>
-          <a href="https://www.discord.com" target="_blank" rel="noreferrer">
-            <img src={require("../assets/icons/discord.svg").default} alt="" />
+          <a
+            href="https://www.discord.com"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img src={require("../assets/icons/discord.svg")} alt="" />
           </a>
         </div>
       </div>

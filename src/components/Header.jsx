@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React from "react";
 import { useNavigate } from "react-router-dom";
 import {FaBars, FaTimes} from 'react-icons/fa'
 // import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -7,7 +7,7 @@ import "../styles/header.css";
 const Header = () => {
   const navigate = useNavigate();
 
-  const navRef = useRef();
+  const navRef = React.useRef();
 
   const showNavbar = () => {
     navRef.current.classList.toggle("responsive_nav");

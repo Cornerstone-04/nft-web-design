@@ -1,0 +1,233 @@
+.rarity {
+    width: calc(100% - 200px);
+    padding: 50px 100px;
+    background: linear-gradient(180deg, #09244e 0%, #04142d 100%);
+    height: 100%;
+    .mobile {
+        display: none;
+    }
+    .desktop {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 50px;
+        h1.title {
+            background: linear-gradient(105.15deg, rgba(255, 255, 255, 0.92) 14.72%, rgba(255, 255, 255, 0.34) 91.65%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 24px rgba(0, 0, 0, 0.25);
+            backdrop-filter: blur(40px);
+            font: 900 60px monospace;
+            margin: 0;
+        }
+        div.options {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            gap: 20px;
+            div.option_names {
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                // gap: 20px;
+                button.tag {
+                    outline: none;
+                    width: 180px;
+                    height: 50px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    font: 700 1.1rem 'Fira code';
+                    border: 5px solid transparent;
+                    border-image: linear-gradient(268.05deg, rgba(81, 68, 80, 0.4) 11.95%, rgba(247, 247, 247, 0.4) 93.94%) 10;
+                    background: transparent;
+                    transition: .3s linear;
+                    color: rgba(255, 255, 255, 0.33);
+                    &:focus {
+                        border-image: linear-gradient(268.05deg, #FD00F3 11.95%, #22A2FF 93.94%) 10;
+                        color: #fff;
+                    }
+                }
+                .active {
+                    outline: none;
+                    width: 200px;
+                    height: 50px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    font: 700 1.1rem 'Fira code';
+                    border: 5px solid transparent;
+                    border-image: linear-gradient(268.05deg, #FD00F3 11.95%, #22A2FF 93.94%) 10;
+                    background: transparent;
+                    color: #fff;
+                }
+            }
+            hr {
+                width: 100%;
+                height: 5px;
+                background: linear-gradient(268.05deg, rgba(81, 68, 80, 0.4) 11.95%, rgba(247, 247, 247, 0.4) 93.94%);
+                border: none;
+                outline: none;
+            }
+        }
+        div.random {
+            width: 100%;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            justify-content: space-between;
+            place-items: center;
+            gap: 60px;
+            div.nft {
+                width: calc(100% - 10px);
+                padding: 0 5px;
+                height: 350px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                gap: 10px;
+                background: rgba(255, 255, 255, 0.06);
+                box-shadow: 0px 5.71459px 5.71459px rgba(0, 0, 0, 0.25), 0px 5.71459px 34.2875px rgba(0, 0, 0, 0.25);
+                backdrop-filter: blur(57.1459px);
+                border: 4px solid transparent;
+                border-image: linear-gradient(134.12deg, rgba(34, 162, 255, 0.28) 18.09%, rgba(34, 162, 255, 0.35) 29.28%, rgba(253, 0, 243, 0.34) 45.52%, rgba(255, 125, 250, 0.56) 72.59%, rgba(255, 125, 250, 0.56) 82.7%) 10;
+                p.nft_title {
+                    font: 700 1.5rem sans-serif;
+                    text-align: center;
+                    width: 50%;
+                    margin: 0 auto;
+                    color: #fff;
+                }
+                p.nft_number {
+                    background: linear-gradient(99.34deg, rgba(79, 181, 255, 0.85) 13.11%, rgba(247, 43, 238, 0.85) 94.12%);
+                    border-radius: 7px;
+                    width: 70px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    height: 30px;
+                    color: #04142D;
+                    font: 900 1rem sans-serif
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .rarity {
+        padding: 50px 25px;
+        width: calc(100% - 50px);
+        .desktop {
+            display: none;
+        }
+        .mobile {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            gap: 25px;
+            h1.title {
+                background: linear-gradient(105.15deg, rgba(255, 255, 255, 0.92) 14.72%, rgba(255, 255, 255, 0.34) 91.65%);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                background-clip: text;
+                text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 24px rgba(0, 0, 0, 0.25);
+                backdrop-filter: blur(40px);
+                font: 900 50px monospace;
+                margin: 0;
+            }
+            div.options {
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                gap: 10px;
+                select {
+                    width: 100%;
+                    padding: 0 10px;
+                    height: 50px;
+                    background: linear-gradient(180deg, #09244e 0%, #04142d 100%);
+                    color: #fff;
+                    font-size: 1.2rem;
+                    outline: none;
+                    border: 1px solid #FFFFFF8F;
+                    border-radius: 5px;
+                }
+                option.tag {
+                    background: #09244e;
+                }
+                hr {
+                    width: 100%;
+                    height: 5px;
+                    background: linear-gradient(268.05deg, rgba(81, 68, 80, 0.4) 11.95%, rgba(247, 247, 247, 0.4) 93.94%);
+                    border: none;
+                    outline: none;
+                }
+            }
+            div.random {
+                width: 100%;
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                justify-content: space-between;
+                place-items: center;
+                column-gap: 15px;
+                row-gap: 30px;
+                div.nft {
+                    width: 150px;
+                    padding: 0 5px;
+                    height: 300px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex-direction: column;
+                    gap: 25px;
+                    background: rgba(255, 255, 255, 0.06);
+                    box-shadow: 0px 5.71459px 5.71459px rgba(0, 0, 0, 0.25), 0px 5.71459px 34.2875px rgba(0, 0, 0, 0.25);
+                    backdrop-filter: blur(57.1459px);
+                    border: 4px solid transparent;
+                    border-image: linear-gradient(134.12deg, rgba(34, 162, 255, 0.28) 18.09%, rgba(34, 162, 255, 0.35) 29.28%, rgba(253, 0, 243, 0.34) 45.52%, rgba(255, 125, 250, 0.56) 72.59%, rgba(255, 125, 250, 0.56) 82.7%) 10;
+                    img {
+                        width: 80%;
+                    }
+                    p.nft_title {
+                        font: 700 1.5rem sans-serif;
+                        text-align: center;
+                        margin: 0 auto;
+                        color: #fff;
+                    }
+                    p.nft_number {
+                        background: linear-gradient(99.34deg, rgba(79, 181, 255, 0.85) 13.11%, rgba(247, 43, 238, 0.85) 94.12%);
+                        border-radius: 7px;
+                        width: 70px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        height: 30px;
+                        color: #04142D;
+                        font: 900 1rem sans-serif
+                    }
+                }
+            }
+            @media only screen and (min-width:600px) and (max-width :1024px) {
+                div.random {
+                    width: 100%;
+                    display: grid;
+                    grid-template-columns: repeat(3, 1fr);
+                    justify-content: space-between;
+                    place-items: center;
+                    column-gap: 15px;
+                    row-gap: 30px;
+                }
+            }
+        }
+    }
+}

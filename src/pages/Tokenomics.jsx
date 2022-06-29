@@ -6,7 +6,7 @@ import Market from "../_mock/Market";
 
 const Tokenomics = () => {
   return (
-    <div className="tokenomics" id="tokenomics">
+    <section className="tokenomics" id="tokenomics">
       {/* mobile & tablet view */}
 
       <div className="mobile">
@@ -79,7 +79,7 @@ const Tokenomics = () => {
             ))}
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

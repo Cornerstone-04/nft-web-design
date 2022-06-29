@@ -1,8 +1,12 @@
 import React from "react";
+//import reusable components
 import Header from "../components/Header";
-import Tokenomics from "./Tokenomics";
-import Faq from "./FAQ";
 import Footer from "../components/Footer";
+//import pages
+import Tokenomics from "./Tokenomics";
+import Rarity from './Rarity';
+import Faq from "./FAQ";
+//import styling
 import "../styles/home.css";
 
 const Home = () => {
@@ -77,6 +81,7 @@ const Home = () => {
         </div>
       </section>
       <Tokenomics />
+      <Rarity />
       <Faq />
       <Footer />
     </section>

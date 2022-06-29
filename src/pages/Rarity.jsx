@@ -1,6 +1,6 @@
 import React from "react";
 import "../styles/rarity.css";
-import NFT from "../_mock/nft";
+import NFT from "../mock/nft.jsx";
 
 const Rarity = () => {
   

@@ -1,5 +1,5 @@
 import React from "react";
-import Details from "../_mock/roadmap";
+import Details from "../mock/roadmap.jsx";
 import '../styles/roadmap.css'
 
 const Roadmap = () => {

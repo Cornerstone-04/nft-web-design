@@ -1,223 +1,132 @@
 .rarity {
-  width: calc(100% - 200px);
-  padding: 50px 100px;
-  background: linear-gradient(180deg, #09244e 0%, #04142d 100%);
-  height: 100%;
-}
-.rarity .mobile {
-  display: none;
-}
-.rarity .desktop {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  gap: 50px;
-}
-.rarity .desktop h1.title {
-  background: linear-gradient(105.15deg, rgba(255, 255, 255, 0.92) 14.72%, rgba(255, 255, 255, 0.34) 91.65%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 24px rgba(0, 0, 0, 0.25);
-  -webkit-backdrop-filter: blur(40px);
-          backdrop-filter: blur(40px);
-  font: 900 60px monospace;
-  margin: 0;
-}
-.rarity .desktop div.options {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  gap: 20px;
-}
-.rarity .desktop div.options div.option_names {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.rarity .desktop div.options div.option_names button.tag {
-  outline: none;
-  width: 180px;
-  height: 50px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font: 700 1.1rem "Fira code";
-  border: 5px solid transparent;
-  -o-border-image: linear-gradient(268.05deg, rgba(81, 68, 80, 0.4) 11.95%, rgba(247, 247, 247, 0.4) 93.94%) 10;
-     border-image: linear-gradient(268.05deg, rgba(81, 68, 80, 0.4) 11.95%, rgba(247, 247, 247, 0.4) 93.94%) 10;
-  background: transparent;
-  transition: 0.3s linear;
-  color: rgba(255, 255, 255, 0.33);
-}
-.rarity .desktop div.options div.option_names button.tag:focus {
-  -o-border-image: linear-gradient(268.05deg, #FD00F3 11.95%, #22A2FF 93.94%) 10;
-     border-image: linear-gradient(268.05deg, #FD00F3 11.95%, #22A2FF 93.94%) 10;
-  color: #fff;
-}
-.rarity .desktop div.options div.option_names .active {
-  outline: none;
-  width: 200px;
-  height: 50px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font: 700 1.1rem "Fira code";
-  border: 5px solid transparent;
-  -o-border-image: linear-gradient(268.05deg, #FD00F3 11.95%, #22A2FF 93.94%) 10;
-     border-image: linear-gradient(268.05deg, #FD00F3 11.95%, #22A2FF 93.94%) 10;
-  background: transparent;
-  color: #fff;
-}
-.rarity .desktop div.options hr {
-  width: 100%;
-  height: 5px;
-  background: linear-gradient(268.05deg, rgba(81, 68, 80, 0.4) 11.95%, rgba(247, 247, 247, 0.4) 93.94%);
-  border: none;
-  outline: none;
-}
-.rarity .desktop div.random {
-  width: 100%;
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  justify-content: space-between;
-  place-items: center;
-  gap: 60px;
-}
-.rarity .desktop div.random div.nft {
-  width: calc(100% - 10px);
-  padding: 0 5px;
-  height: 350px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  gap: 10px;
-  background: rgba(255, 255, 255, 0.06);
-  box-shadow: 0px 5.71459px 5.71459px rgba(0, 0, 0, 0.25), 0px 5.71459px 34.2875px rgba(0, 0, 0, 0.25);
-  -webkit-backdrop-filter: blur(57.1459px);
-          backdrop-filter: blur(57.1459px);
-  border: 4px solid transparent;
-  -o-border-image: linear-gradient(134.12deg, rgba(34, 162, 255, 0.28) 18.09%, rgba(34, 162, 255, 0.35) 29.28%, rgba(253, 0, 243, 0.34) 45.52%, rgba(255, 125, 250, 0.56) 72.59%, rgba(255, 125, 250, 0.56) 82.7%) 10;
-     border-image: linear-gradient(134.12deg, rgba(34, 162, 255, 0.28) 18.09%, rgba(34, 162, 255, 0.35) 29.28%, rgba(253, 0, 243, 0.34) 45.52%, rgba(255, 125, 250, 0.56) 72.59%, rgba(255, 125, 250, 0.56) 82.7%) 10;
-}
-.rarity .desktop div.random div.nft p.nft_title {
-  font: 700 1.5rem sans-serif;
-  text-align: center;
-  width: 50%;
-  margin: 0 auto;
-  color: #fff;
-}
-.rarity .desktop div.random div.nft p.nft_number {
-  background: linear-gradient(99.34deg, rgba(79, 181, 255, 0.85) 13.11%, rgba(247, 43, 238, 0.85) 94.12%);
-  border-radius: 7px;
-  width: 70px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 30px;
-  color: #04142D;
-  font: 900 1rem sans-serif;
+    width: calc(100% - 200px);
+    padding: 50px 100px;
+    background: linear-gradient(180deg, #09244e 0%, #04142d 100%);
+    height: 100%;
 }
 
-@media only screen and (max-width: 1024px) {
-  .rarity {
-    padding: 50px 25px;
-    width: calc(100% - 50px);
-  }
-  .rarity .desktop {
+.rarity .mobile {
     display: none;
-  }
-  .rarity .mobile {
+}
+
+.rarity .desktop {
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    gap: 25px;
-  }
-  .rarity .mobile h1.title {
+    gap: 50px;
+}
+
+.rarity .desktop h1.title {
     background: linear-gradient(105.15deg, rgba(255, 255, 255, 0.92) 14.72%, rgba(255, 255, 255, 0.34) 91.65%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 24px rgba(0, 0, 0, 0.25);
     -webkit-backdrop-filter: blur(40px);
-            backdrop-filter: blur(40px);
-    font: 900 50px monospace;
+    backdrop-filter: blur(40px);
+    font: 900 60px monospace;
     margin: 0;
-  }
-  .rarity .mobile div.options {
+}
+
+.rarity .desktop div.options {
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    gap: 10px;
-  }
-  .rarity .mobile div.options select {
+    gap: 20px;
+}
+
+.rarity .desktop div.options div.option_names {
     width: 100%;
-    padding: 0 10px;
-    height: 50px;
-    background: linear-gradient(180deg, #09244e 0%, #04142d 100%);
-    color: #fff;
-    font-size: 1.2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.rarity .desktop div.options div.option_names button.tag {
     outline: none;
-    border: 1px solid rgba(255, 255, 255, 0.5607843137);
-    border-radius: 5px;
-  }
-  .rarity .mobile div.options option.tag {
-    background: #09244e;
-  }
-  .rarity .mobile div.options hr {
+    width: 180px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font: 700 1.1rem "Fira code";
+    border: 5px solid transparent;
+    -o-border-image: linear-gradient(268.05deg, rgba(81, 68, 80, 0.4) 11.95%, rgba(247, 247, 247, 0.4) 93.94%) 10;
+    border-image: linear-gradient(268.05deg, rgba(81, 68, 80, 0.4) 11.95%, rgba(247, 247, 247, 0.4) 93.94%) 10;
+    background: transparent;
+    transition: 0.3s linear;
+    color: rgba(255, 255, 255, 0.33);
+}
+
+.rarity .desktop div.options div.option_names button.tag:focus {
+    -o-border-image: linear-gradient(268.05deg, #FD00F3 11.95%, #22A2FF 93.94%) 10;
+    border-image: linear-gradient(268.05deg, #FD00F3 11.95%, #22A2FF 93.94%) 10;
+    color: #fff;
+}
+
+.rarity .desktop div.options div.option_names .active {
+    outline: none;
+    width: 200px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font: 700 1.1rem "Fira code";
+    border: 5px solid transparent;
+    -o-border-image: linear-gradient(268.05deg, #FD00F3 11.95%, #22A2FF 93.94%) 10;
+    border-image: linear-gradient(268.05deg, #FD00F3 11.95%, #22A2FF 93.94%) 10;
+    background: transparent;
+    color: #fff;
+}
+
+.rarity .desktop div.options hr {
     width: 100%;
     height: 5px;
     background: linear-gradient(268.05deg, rgba(81, 68, 80, 0.4) 11.95%, rgba(247, 247, 247, 0.4) 93.94%);
     border: none;
     outline: none;
-  }
-  .rarity .mobile div.random {
+}
+
+.rarity .desktop div.random {
     width: 100%;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     justify-content: space-between;
     place-items: center;
-    -moz-column-gap: 15px;
-         column-gap: 15px;
-    row-gap: 30px;
-  }
-  .rarity .mobile div.random div.nft {
-    width: 150px;
+    gap: 60px;
+}
+
+.rarity .desktop div.random div.nft {
+    width: calc(100% - 10px);
     padding: 0 5px;
-    height: 300px;
+    height: 350px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    gap: 25px;
+    gap: 10px;
     background: rgba(255, 255, 255, 0.06);
     box-shadow: 0px 5.71459px 5.71459px rgba(0, 0, 0, 0.25), 0px 5.71459px 34.2875px rgba(0, 0, 0, 0.25);
     -webkit-backdrop-filter: blur(57.1459px);
-            backdrop-filter: blur(57.1459px);
+    backdrop-filter: blur(57.1459px);
     border: 4px solid transparent;
     -o-border-image: linear-gradient(134.12deg, rgba(34, 162, 255, 0.28) 18.09%, rgba(34, 162, 255, 0.35) 29.28%, rgba(253, 0, 243, 0.34) 45.52%, rgba(255, 125, 250, 0.56) 72.59%, rgba(255, 125, 250, 0.56) 82.7%) 10;
-       border-image: linear-gradient(134.12deg, rgba(34, 162, 255, 0.28) 18.09%, rgba(34, 162, 255, 0.35) 29.28%, rgba(253, 0, 243, 0.34) 45.52%, rgba(255, 125, 250, 0.56) 72.59%, rgba(255, 125, 250, 0.56) 82.7%) 10;
-  }
-  .rarity .mobile div.random div.nft img {
-    width: 80%;
-  }
-  .rarity .mobile div.random div.nft p.nft_title {
+    border-image: linear-gradient(134.12deg, rgba(34, 162, 255, 0.28) 18.09%, rgba(34, 162, 255, 0.35) 29.28%, rgba(253, 0, 243, 0.34) 45.52%, rgba(255, 125, 250, 0.56) 72.59%, rgba(255, 125, 250, 0.56) 82.7%) 10;
+}
+
+.rarity .desktop div.random div.nft p.nft_title {
     font: 700 1.5rem sans-serif;
     text-align: center;
+    width: 50%;
     margin: 0 auto;
     color: #fff;
-  }
-  .rarity .mobile div.random div.nft p.nft_number {
+}
+
+.rarity .desktop div.random div.nft p.nft_number {
     background: linear-gradient(99.34deg, rgba(79, 181, 255, 0.85) 13.11%, rgba(247, 43, 238, 0.85) 94.12%);
     border-radius: 7px;
     width: 70px;
@@ -227,17 +136,122 @@
     height: 30px;
     color: #04142D;
     font: 900 1rem sans-serif;
-  }
 }
+
+@media only screen and (max-width: 1024px) {
+    .rarity {
+        padding: 50px 25px;
+        width: calc(100% - 50px);
+    }
+    .rarity .desktop {
+        display: none;
+    }
+    .rarity .mobile {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 25px;
+    }
+    .rarity .mobile h1.title {
+        background: linear-gradient(105.15deg, rgba(255, 255, 255, 0.92) 14.72%, rgba(255, 255, 255, 0.34) 91.65%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 24px rgba(0, 0, 0, 0.25);
+        -webkit-backdrop-filter: blur(40px);
+        backdrop-filter: blur(40px);
+        font: 900 50px monospace;
+        margin: 0;
+    }
+    .rarity .mobile div.options {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 10px;
+    }
+    .rarity .mobile div.options select {
+        width: 100%;
+        padding: 0 10px;
+        height: 50px;
+        background: linear-gradient(180deg, #09244e 0%, #04142d 100%);
+        color: #fff;
+        font-size: 1.2rem;
+        outline: none;
+        border: 1px solid rgba(255, 255, 255, 0.5607843137);
+        border-radius: 5px;
+    }
+    .rarity .mobile div.options option.tag {
+        background: #09244e;
+    }
+    .rarity .mobile div.options hr {
+        width: 100%;
+        height: 5px;
+        background: linear-gradient(268.05deg, rgba(81, 68, 80, 0.4) 11.95%, rgba(247, 247, 247, 0.4) 93.94%);
+        border: none;
+        outline: none;
+    }
+    .rarity .mobile div.random {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: space-between;
+        place-items: center;
+        -moz-column-gap: 15px;
+        column-gap: 15px;
+        row-gap: 30px;
+    }
+    .rarity .mobile div.random div.nft {
+        width: 150px;
+        padding: 0 5px;
+        height: 300px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 25px;
+        background: rgba(255, 255, 255, 0.06);
+        box-shadow: 0px 5.71459px 5.71459px rgba(0, 0, 0, 0.25), 0px 5.71459px 34.2875px rgba(0, 0, 0, 0.25);
+        -webkit-backdrop-filter: blur(57.1459px);
+        backdrop-filter: blur(57.1459px);
+        border: 4px solid transparent;
+        -o-border-image: linear-gradient(134.12deg, rgba(34, 162, 255, 0.28) 18.09%, rgba(34, 162, 255, 0.35) 29.28%, rgba(253, 0, 243, 0.34) 45.52%, rgba(255, 125, 250, 0.56) 72.59%, rgba(255, 125, 250, 0.56) 82.7%) 10;
+        border-image: linear-gradient(134.12deg, rgba(34, 162, 255, 0.28) 18.09%, rgba(34, 162, 255, 0.35) 29.28%, rgba(253, 0, 243, 0.34) 45.52%, rgba(255, 125, 250, 0.56) 72.59%, rgba(255, 125, 250, 0.56) 82.7%) 10;
+    }
+    .rarity .mobile div.random div.nft img {
+        width: 80%;
+    }
+    .rarity .mobile div.random div.nft p.nft_title {
+        font: 700 1.5rem sans-serif;
+        text-align: center;
+        margin: 0 auto;
+        color: #fff;
+    }
+    .rarity .mobile div.random div.nft p.nft_number {
+        background: linear-gradient(99.34deg, rgba(79, 181, 255, 0.85) 13.11%, rgba(247, 43, 238, 0.85) 94.12%);
+        border-radius: 7px;
+        width: 70px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 30px;
+        color: #04142D;
+        font: 900 1rem sans-serif;
+    }
+}
+
 @media only screen and (max-width: 1024px) and (min-width: 600px) and (max-width: 1024px) {
-  .rarity .mobile div.random {
-    width: 100%;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    justify-content: space-between;
-    place-items: center;
-    -moz-column-gap: 15px;
-         column-gap: 15px;
-    row-gap: 30px;
-  }
-}/*# sourceMappingURL=rarity.css.map */
+    .rarity .mobile div.random {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        justify-content: space-between;
+        place-items: center;
+        -moz-column-gap: 15px;
+        column-gap: 15px;
+        row-gap: 30px;
+    }
+}

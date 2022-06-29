@@ -1,7 +1,7 @@
 import React from "react";
 import "../styles/faq.css";
 
-import Questions from '../_mock/Questions'
+import Questions from '../_mock/questions'
 
 const Faq = () => {
   return (

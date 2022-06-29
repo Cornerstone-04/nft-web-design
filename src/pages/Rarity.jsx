@@ -1,6 +1,6 @@
 import React from "react";
 import "../styles/rarity.css";
-import NFT from "../_mock/NFT";
+import NFT from "../_mock/nft";
 
 const Rarity = () => {
   // const [tag, setTag] = React.useState(false)

@@ -1,11 +1,10 @@
 import React from "react";
-import Header from "../components/Header";
+import Details from "../_mock/roadmap";
 
 const Roadmap = () => {
   return (
-    <div className="about">
-      <Header />
-    </div>
+    <section className="roadmap" id="details">
+    </section>
   );
 };
 

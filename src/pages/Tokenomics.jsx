@@ -1,8 +1,8 @@
 import React from "react";
 import "../styles/tokenomics.css";
 
-import Tokens from "../_mock/Tokens.jsx";
-import Market from "../_mock/Market";
+import Tokens from "../_mock/tokens.jsx";
+import Market from "../_mock/market";
 
 const Tokenomics = () => {
   return (

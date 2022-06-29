@@ -4,8 +4,9 @@ import Header from "../components/Header";
 import Footer from "../components/Footer";
 //import pages
 import Tokenomics from "./Tokenomics";
-import Rarity from './Rarity';
+import Rarity from "./Rarity";
 import Faq from "./FAQ";
+import Roadmap from "./Roadmap";
 //import styling
 import "../styles/home.css";
 
@@ -28,14 +29,24 @@ const Home = () => {
               </p>
             </div>
             <div className="social_buttons">
-              <a className="twitter" href="https://twitter.com/cornerstone_jsx" target="_blank" rel="noopener noreferrer">
+              <a
+                className="twitter"
+                href="https://twitter.com/cornerstone_jsx"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <img
                   src={require("../assets/icons/twitter-plain.svg")}
                   alt=""
                 />
                 <span>Twitter</span>
               </a>
-              <a className="discord" href="https://discord.com/channels/@Cornerstone9139" target="_blank" rel="noopener noreferrer">
+              <a
+                className="discord"
+                href="https://discord.com/channels/@Cornerstone9139"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <img
                   src={require("../assets/icons/discord-plain.svg")}
                   alt=""
@@ -59,14 +70,24 @@ const Home = () => {
               </p>
             </div>
             <div className="social_buttons">
-              <a className="twitter" href="https://twitter.com/cornerstone_jsx" target="_blank" rel="noopener noreferrer">
+              <a
+                className="twitter"
+                href="https://twitter.com/cornerstone_jsx"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <img
                   src={require("../assets/icons/twitter-plain.svg")}
                   alt=""
                 />
                 <span>Twitter</span>
               </a>
-              <a className="discord" href="https://discord.com/channels/@Cornerstone9139" target="_blank" rel="noopener noreferrer">
+              <a
+                className="discord"
+                href="https://discord.com/channels/@Cornerstone9139"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <img
                   src={require("../assets/icons/discord-plain.svg")}
                   alt=""
@@ -82,6 +103,7 @@ const Home = () => {
       </section>
       <Tokenomics />
       <Rarity />
+      <Roadmap />
       <Faq />
       <Footer />
     </section>

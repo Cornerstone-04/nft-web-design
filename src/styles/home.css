@@ -16,7 +16,7 @@ section.landing div.mobile_landing {
     display: none;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 1024px) {
     section.landing div.mobile_landing {
         display: flex;
         justify-content: center;
@@ -92,7 +92,9 @@ section.landing div.mobile_landing {
     }
     section.landing div.mobile_landing div.social_buttons .discord {
         background: transparent;
-        border: 5px solid #f0f0f0;
+        border: 5px solid transparent;
+        border-image-source: linear-gradient(268.05deg, #FD00F3 11.95%, #22A2FF 93.94%);
+        border-image-slice: 1;
         height: 50px;
     }
 }
@@ -186,7 +188,9 @@ section.landing div.desktop_landing div.content div.social_buttons .twitter {
 
 section.landing div.desktop_landing div.content div.social_buttons .discord {
     background: transparent;
-    border: 5px solid #f0f0f0;
+    border: 5px solid transparent;
+    border-image-source: linear-gradient(268.05deg, #FD00F3 11.95%, #22A2FF 93.94%);
+    border-image-slice: 1;
     height: 50px;
 }
 
@@ -199,7 +203,7 @@ section.landing div.desktop_landing div.image img {
     max-width: 100%;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 1024px) {
     section.landing div.desktop_landing {
         display: none;
     }

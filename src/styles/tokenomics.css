@@ -5,18 +5,144 @@
     height: 100%;
 }
 
+.tokenomics .mobile {
+    display: none;
+}
+
+.tokenomics .desktop {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    align-items: center;
+    justify-content: center;
+}
+
+.tokenomics .desktop h1.title {
+    background: linear-gradient(105.15deg, rgba(255, 255, 255, 0.92) 14.72%, rgba(255, 255, 255, 0.34) 91.65%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 24px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(40px);
+    font: 900 60px monospace;
+    margin: 0;
+}
+
+.tokenomics .desktop div.table {
+    text-align: center;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    text-transform: uppercase;
+    padding: 20px 0 7px 0;
+}
+
+.tokenomics .desktop div.table div.name {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
+
+.tokenomics .desktop div.table div.name p.coin {
+    font: 400 20px sans-serif;
+    color: #f0f0f0;
+}
+
+.tokenomics .desktop div.table div.name p.value {
+    display: flex;
+    font: 400 16px sans-serif;
+    color: #FFFFFF9e;
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+.tokenomics .desktop div.table div.name p.value span:nth-child(2) {
+    color: #16c784;
+}
+
+.tokenomics .desktop div.table div.market {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.tokenomics .desktop div.table div.market div.market_val {
+    font: 300 16px sans-serif;
+    color: #FFFFFF8a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.tokenomics .desktop div.table div.market div.market_val p .usd {
+    font-size: 13px;
+}
+
+.tokenomics .desktop div.table div.power {
+    font: italic 400 12px sans-serif;
+    text-transform: capitalize;
+    color: #FFFFFF8a;
+}
+
+.tokenomics .desktop div.token_details {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.tokenomics .desktop div.token_details .box {
+    width: calc(28% - 80px);
+    height: 247px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 15px;
+    padding: 0 50px 0 30px;
+    background: linear-gradient(107.21deg, rgba(255, 255, 255, 0.26) 2.84%, rgba(255, 255, 255, 0.06) 73.23%);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 24px -1px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(40px);
+    border-radius: 7px;
+    border: 3px solid transparent;
+    border-image: linear-gradient(138.47deg, rgba(255, 125, 250, 0.56) 12.39%, rgba(253, 0, 243, 0.34) 48.48%, rgba(34, 162, 255, 0.35) 64.08%, rgba(34, 162, 255, 0.28) 76.52%) 10;
+}
+
+.tokenomics .desktop div.token_details .box p.token_head {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+    text-shadow: 0px 0px 12px rgba(0, 0, 0, 0.62);
+    font: 900 25px sans-serif;
+}
+
+.tokenomics .desktop div.token_details .box p.token_desc {
+    line-height: 29px;
+    color: rgba(255, 255, 255, 0.52);
+    font: 400 17px sans-serif;
+}
+
+p {
+    margin: 0;
+}
+
 @media (max-width: 1024px) {
     .tokenomics {
         padding: 50px 25px;
         width: calc(100% - 50px);
     }
-}
-
-.tokenomics .mobile {
-    display: none;
-}
-
-@media (max-width: 1024px) {
+    .tokenomics .desktop {
+        display: none;
+    }
     .tokenomics .mobile {
         display: flex;
         justify-content: center;
@@ -30,7 +156,6 @@
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         background-clip: text;
-        text-fill-color: transparent;
         text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 24px rgba(0, 0, 0, 0.25);
         backdrop-filter: blur(40px);
         font: 900 50px monospace;
@@ -125,135 +250,4 @@
         color: rgba(255, 255, 255, 0.52);
         font: 400 17px sans-serif;
     }
-}
-
-.tokenomics .desktop {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    gap: 50px;
-    align-items: center;
-    justify-content: center;
-}
-
-.tokenomics .desktop h1.title {
-    background: linear-gradient(105.15deg, rgba(255, 255, 255, 0.92) 14.72%, rgba(255, 255, 255, 0.34) 91.65%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    text-fill-color: transparent;
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 24px rgba(0, 0, 0, 0.25);
-    backdrop-filter: blur(40px);
-    font: 900 60px monospace;
-    margin: 0;
-}
-
-.tokenomics .desktop div.table {
-    text-align: center;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 40px;
-    text-transform: uppercase;
-    padding: 20px 0 7px 0;
-}
-
-.tokenomics .desktop div.table div.name {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    gap: 5px;
-}
-
-.tokenomics .desktop div.table div.name p.coin {
-    font: 400 20px sans-serif;
-    color: #f0f0f0;
-}
-
-.tokenomics .desktop div.table div.name p.value {
-    display: flex;
-    font: 400 16px sans-serif;
-    color: #fff 9e;
-    width: 100%;
-    justify-content: space-evenly;
-}
-
-.tokenomics .desktop div.table div.name p.value span:nth-child(2) {
-    color: #16c784;
-}
-
-.tokenomics .desktop div.table div.market {
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
-}
-
-.tokenomics .desktop div.table div.market div.market_val {
-    font: 300 16px sans-serif;
-    color: #FFFFFF8a;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    gap: 5px;
-}
-
-.tokenomics .desktop div.table div.market div.market_val p .usd {
-    font-size: 13px;
-}
-
-.tokenomics .desktop div.table div.power {
-    font: italic 400 12px sans-serif;
-    text-transform: capitalize;
-    color: #FFFFFF8a;
-}
-
-.tokenomics .desktop div.token_details {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.tokenomics .desktop div.token_details .box {
-    width: calc(28% - 80px);
-    height: 247px;
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    flex-direction: column;
-    gap: 15px;
-    padding: 0 50px 0 30px;
-    background: linear-gradient(107.21deg, rgba(255, 255, 255, 0.26) 2.84%, rgba(255, 255, 255, 0.06) 73.23%);
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 24px -1px rgba(0, 0, 0, 0.25);
-    backdrop-filter: blur(40px);
-    border-radius: 7px;
-}
-
-.tokenomics .desktop div.token_details .box p.token_head {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    color: #fff;
-    text-shadow: 0px 0px 12px rgba(0, 0, 0, 0.62);
-    font: 900 25px sans-serif;
-}
-
-.tokenomics .desktop div.token_details .box p.token_desc {
-    line-height: 29px;
-    color: rgba(255, 255, 255, 0.52);
-    font: 400 17px sans-serif;
-}
-
-@media (max-width: 1024px) {
-    .tokenomics .desktop {
-        display: none;
-    }
-}
-
-p {
-    margin: 0;
 }

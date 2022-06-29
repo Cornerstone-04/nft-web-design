@@ -28,7 +28,7 @@ const Footer = () => {
             <img src={require("../assets/icons/twitter.svg")} alt="" />
           </a>
           <a
-            href="https://www.discord.com"
+            href="https://discord.com/channels/@Cornerstone9139"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -60,7 +60,7 @@ const Footer = () => {
             <img src={require("../assets/icons/twitter.svg")} alt="" />
           </a>
           <a
-            href="https://www.discord.com"
+            href="https://discord.com/channels/@Cornerstone9139"
             target="_blank"
             rel="noopener noreferrer"
           >

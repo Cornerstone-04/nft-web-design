@@ -1,0 +1,89 @@
+.roadmap {
+    width: calc(100% - 200px);
+    padding: 50px 100px;
+    background: linear-gradient(180deg, #09244e 0%, #04142d 100%);
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.roadmap h1.title {
+    background: linear-gradient(105.15deg, rgba(255, 255, 255, 0.92) 14.72%, rgba(255, 255, 255, 0.34) 91.65%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 24px rgba(0, 0, 0, 0.25);
+    -webkit-backdrop-filter: blur(40px);
+    backdrop-filter: blur(40px);
+    font: 900 60px monospace;
+    margin: 0;
+}
+
+.roadmap div.map {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-auto-flow: dense;
+    row-gap: 50px;
+}
+
+.roadmap div.map div.box {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    position: relative;
+    text-align: left;
+}
+
+.roadmap div.map div.box p.head {
+    background: linear-gradient(97deg, #4FB5FF 13.59%, #F72BEE 103.18%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font: 900 35px monospace;
+}
+
+.roadmap div.map div.box p.line {
+    width: 40%;
+}
+
+.roadmap div.map div.box p.line hr {
+    width: 100%;
+    height: 5px;
+    background: linear-gradient(268.05deg, #FD00F3 11.95%, #22A2FF 93.94%);
+    border: none;
+    outline: none;
+}
+
+.roadmap div.map div.box p.desc {
+    color: rgba(255, 255, 255, 0.9882352941);
+    font: 900 23px sans-serif;
+}
+
+.roadmap div.map div.box p.sub {
+    width: 42%;
+    color: rgba(255, 255, 255, 0.6980392157);
+    font: 400 1rem sans-serif;
+}
+
+.roadmap div.map div.box:nth-child(2n) {
+    justify-content: flex-end;
+    align-items: flex-end;
+    text-align: right;
+}
+
+@media only screen and (max-width: 1024px) {
+    .roadmap {
+        padding: 60px;
+        width: calc(100% - 120px);
+    }
+    .roadmap div.map div.box p.line {
+        width: 100%;
+    }
+    .roadmap div.map div.box p.sub {
+        width: 80%;
+    }
+}

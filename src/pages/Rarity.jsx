@@ -3,12 +3,7 @@ import "../styles/rarity.css";
 import NFT from "../_mock/nft";
 
 const Rarity = () => {
-  // const [tag, setTag] = React.useState(false)
-  // const switchTag=()=>{
-  //   setTag(tag => !tag)
-  // }
-
-  // const toggleClassCheck = tag ? 'active': 'tag';
+  
   return (
     <section className="rarity" id="rarity">
       <div className="mobile">

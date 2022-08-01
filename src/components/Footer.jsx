@@ -25,14 +25,14 @@ const Footer = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <img src={require("../assets/icons/twitter.svg")} alt="" />
+            <img src={require("../assets/icons/twitter.svg").require} alt="" />
           </a>
           <a
             href="https://discord.com/channels/@Cornerstone9139"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <img src={require("../assets/icons/discord.svg")} alt="" />
+            <img src={require("../assets/icons/discord.svg").require} alt="" />
           </a>
         </div>
       </div>
@@ -57,14 +57,14 @@ const Footer = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <img src={require("../assets/icons/twitter.svg")} alt="" />
+            <img src={require("../assets/icons/twitter.svg").require} alt="" />
           </a>
           <a
             href="https://discord.com/channels/@Cornerstone9139"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <img src={require("../assets/icons/discord.svg")} alt="" />
+            <img src={require("../assets/icons/discord.svg").require} alt="" />
           </a>
         </div>
       </div>

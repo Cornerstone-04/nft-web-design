@@ -77,7 +77,7 @@ const Home = () => {
                 rel="noopener noreferrer"
               >
                 <img
-                  src={require("../assets/icons/twitter-plain.svg")}
+                  src={require("../assets/icons/twitter-plain.svg").default}
                   alt=""
                 />
                 <span>Twitter</span>
@@ -89,7 +89,7 @@ const Home = () => {
                 rel="noopener noreferrer"
               >
                 <img
-                  src={require("../assets/icons/discord-plain.svg")}
+                  src={require("../assets/icons/discord-plain.svg").default}
                   alt=""
                 />
                 <span>Discord</span>

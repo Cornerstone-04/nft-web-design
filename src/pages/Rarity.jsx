@@ -24,7 +24,7 @@ const Rarity = () => {
           {NFT &&
             NFT.map((nft) => (
               <div className="nft" key={nft.id}>
-                <img src={nft.image} alt="nft_image" />
+                <img loading="lazy" src={nft.image} alt="nft_image" />
                 <p className="nft_title">{nft.title}</p>
                 <p className="nft_number">{nft.number}</p>
               </div>
@@ -47,7 +47,7 @@ const Rarity = () => {
           {NFT &&
             NFT.map((nft) => (
               <div className="nft" key={nft.id}>
-                <img src={nft.image} alt="nft_image" />
+                <img loading="lazy" src={nft.image} alt="nft_image" />
                 <p className="nft_title">{nft.title}</p>
                 <p className="nft_number">{nft.number}</p>
               </div>

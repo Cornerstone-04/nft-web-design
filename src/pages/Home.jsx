@@ -97,7 +97,7 @@ const Home = () => {
             </div>
           </div>
           <div className="image">
-            <img src={require("../assets/images/nft_bus.png")} alt="" />
+            <img loading="lazy" src={require("../assets/images/nft_bus.png")} alt="" />
           </div>
         </div>
       </section>

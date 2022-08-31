@@ -1,38 +1,41 @@
 body {
-    margin: 0;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    position: relative;
-    min-height: 100%;
-    background: #282c34;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  position: relative;
+  min-height: 100%;
+  background: #282c34;
 }
 
 code {
-    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
 }
 
 html {
-    scroll-behavior: smooth;
-    transition: .5s linear;
+  scroll-behavior: smooth;
+  transition: 0.5s linear;
 }
 
-img,
-a,
-button {
-    cursor: pointer;
+*{
+    margin: 0;
+    padding: 0;
+    cursor: none;
 }
 
 body::-webkit-scrollbar {
-    width: 5px;
+  width: 5px;
 }
 
 ::-webkit-scrollbar-track {
-    background: linear-gradient(to bottom, #09244E 0%, #04142D 100%);
+  background: linear-gradient(to bottom, #09244e 0%, #04142d 100%);
 }
 
 ::-webkit-scrollbar-thumb {
-    background: linear-gradient(to bottom, #22A2FF 13.04%, #FD00F3 87.87%);
-    width: 5px;
-    border-radius: 10px;
+  background: linear-gradient(to bottom, #22a2ff 13.04%, #fd00f3 87.87%);
+  width: 5px;
+  border-radius: 10px;
 }

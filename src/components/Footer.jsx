@@ -1,5 +1,7 @@
 import React from "react";
 import "../styles/footer.css";
+import Twitter from "../assets/icons/twitter.svg"
+import Discord from "../assets/icons/discord.svg"
 
 const Footer = () => {
   return (
@@ -25,14 +27,14 @@ const Footer = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <img src={require("../assets/icons/twitter.svg").require} alt="" />
+            <img src={Twitter} alt="" />
           </a>
           <a
             href="https://discord.com/channels/@Cornerstone9139"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <img src={require("../assets/icons/discord.svg").require} alt="" />
+            <img src={Discord} alt="" />
           </a>
         </div>
       </div>
@@ -57,14 +59,14 @@ const Footer = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <img src={require("../assets/icons/twitter.svg").require} alt="" />
+            <img src={Twitter} alt="" />
           </a>
           <a
             href="https://discord.com/channels/@Cornerstone9139"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <img src={require("../assets/icons/discord.svg").require} alt="" />
+            <img src={Discord} alt="" />
           </a>
         </div>
       </div>

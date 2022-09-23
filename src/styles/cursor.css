@@ -1,19 +1,20 @@
 .cursor {
   z-index: 1000;
   border-radius: 100%;
-  width: 20px;
-  height: 20px;
-  /* background: #fff; */
+  width: 5px;
+  height: 5px;
+  background: #fff;
   border: 2px solid #fff;
   /* mix-blend-mode: difference; */
   pointer-events: none;
   overflow: hidden;
   transform: translate3d(0, 0, 0);
   position: fixed;
+  transition: 0.3s linear;
 }
 
-@media only screen and (max-width: 1024px){
-    .cursor{
-        display: none;
-    }
+@media only screen and (max-width: 1024px) {
+  .cursor {
+    display: none;
+  }
 }

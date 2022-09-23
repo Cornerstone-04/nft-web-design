@@ -28,6 +28,13 @@ const Home = () => {
                 eiusmod tempor incididunt ut labore et dolore magna aliqua.
               </p>
             </div>
+            <div className="image">
+              <img
+                loading="lazy"
+                src={require("../assets/images/nft_bus.png")}
+                alt=""
+              />
+            </div>
             <div className="social_buttons">
               <a
                 className="twitter"
@@ -97,7 +104,11 @@ const Home = () => {
             </div>
           </div>
           <div className="image">
-            <img loading="lazy" src={require("../assets/images/nft_bus.png")} alt="" />
+            <img
+              loading="lazy"
+              src={require("../assets/images/nft_bus.png")}
+              alt=""
+            />
           </div>
         </div>
       </section>

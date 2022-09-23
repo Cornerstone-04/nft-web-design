@@ -65,6 +65,9 @@ section.landing div.mobile_landing {
     font: 300 15.5px sans-serif;
     color: #ffffff99;
   }
+  section.landing div.mobile_landing div.content div.image img {
+    max-width: 100%;
+  }
   section.landing div.mobile_landing div.social_buttons {
     width: 100%;
     display: flex;

@@ -2,7 +2,7 @@
     width: calc(100% - 200px);
     padding: 50px 100px;
     background: linear-gradient(180deg, #09244e 0%, #04142d 100%);
-    height: 100%;
+    /* height: 100vh; */
 }
 
 .tokenomics .mobile {
